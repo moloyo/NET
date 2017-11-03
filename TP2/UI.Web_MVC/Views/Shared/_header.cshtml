@@ -1,0 +1,171 @@
+﻿@using UI.Web_MVC.Shared
+<!-- Static navbar -->
+<nav class="navbar navbar-default myFooter" style="background-color: #3c3d41; color: #f9f9f9; z-index:10;">
+    <div class="container-fluid" >
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Acad</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" style="border-color: #e7e7e7; color: #f9f9f9; background-color: #3c3d41;">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/User">List - Edit - Delete</a>
+                        </li>
+                        <li>
+                            <a href="/User/Create">Create</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teacher<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/Teacher">List - Edit - Delete</a>
+                        </li>
+                        <li>
+                            <a href="/Teacher/Create">Create</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/Student">List - Edit - Delete</a>
+                        </li>
+                        <li>
+                            <a href="/Student/Create">Create</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inscription<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/Inscription">List - Edit - Delete</a>
+                        </li>
+                        <li>
+                            <a href="/Inscription/Create">Create</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plan<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/Plan">List - Edit - Delete</a>
+                        </li>
+                        <li>
+                            <a href="/Plan/Create">Create</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Specialty<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/Specialty">List - Edit - Delete</a>
+                        </li>
+                        <li>
+                            <a href="/Specialty/Create">Create</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Subject<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/Subject">List - Edit - Delete</a>
+                        </li>
+                        <li>
+                            <a href="/Subject/Create">Create</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Commission<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/Commission">List - Edit - Delete</a>
+                        </li>
+                        <li>
+                            <a href="/Commission/Create">Create</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Course<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/Course">List - Edit - Delete</a>
+                        </li>
+                        <li>
+                            <a href="/Course/Create">Create</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/Assignment">Assignment</a>
+                </li>
+                <li>
+                    <a href="/Qualifications">Qualification</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/Report/AttendingList">Attending List</a>
+                        </li>
+                        <li>
+                            <a href="/Report/StudentAverage">Student Average</a>
+                        </li>
+                        <li>
+                            <a href="/Report/BestStudentByYear">Best Students by Year</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                @if (AccessManager.AuthenticatedUser()) {
+                    <li class="active">
+                        <a href="/Logout">Log Out</a>
+                    </li>
+                } else {
+                    <li class="active">
+                        <a href="#" data-toggle="modal" data-target="#login-modal">LogIn<span class="sr-only">(current)</span></a>
+                    </li>
+                }
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+</nav>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="loginmodal-container">
+            <h1>Login</h1>
+            <br>
+            @using (Html.BeginForm("Index", "Login", FormMethod.Post)) {
+                <fieldset>
+                    Username: @Html.TextBox("username")
+                    Password: @Html.Password("password")
+                    <input type="submit" name="submit" class="login loginmodal-submit" value="Login">
+                </fieldset>
+            }
+            <div class="login-help">
+                If you don't have an account, contact the administrator
+            </div>
+        </div>
+    </div>
+</div>

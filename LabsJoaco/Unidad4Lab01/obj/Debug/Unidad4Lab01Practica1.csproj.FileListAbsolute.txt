@@ -1,0 +1,7 @@
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab01\bin\Debug\agenda.txt
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab01\bin\Debug\Unidad4Lab01.exe.config
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab01\bin\Debug\Unidad4Lab01.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab01\bin\Debug\Unidad4Lab01.pdb
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab01\obj\Debug\Unidad4Lab01Practica1.csprojResolveAssemblyReference.cache
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab01\obj\Debug\Unidad4Lab01.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab01\obj\Debug\Unidad4Lab01.pdb

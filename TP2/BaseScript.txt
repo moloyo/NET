@@ -1,0 +1,614 @@
+/*    ==Scripting Parameters==
+
+    Source Server Version : SQL Server 2016 (13.0.1742)
+    Source Database Engine Edition : Microsoft SQL Server Enterprise Edition
+    Source Database Engine Type : Standalone SQL Server
+
+    Target Server Version : SQL Server 2012
+    Target Database Engine Edition : Microsoft SQL Server Standard Edition
+    Target Database Engine Type : Standalone SQL Server
+*/
+USE [net38]
+GO
+/****** Object:  User [net38]    Script Date: 25/10/2017 14:15:09 ******/
+CREATE USER [net38] FOR LOGIN [net38] WITH DEFAULT_SCHEMA=[dbo]
+GO
+ALTER ROLE [db_owner] ADD MEMBER [net38]
+GO
+ALTER ROLE [db_accessadmin] ADD MEMBER [net38]
+GO
+ALTER ROLE [db_securityadmin] ADD MEMBER [net38]
+GO
+ALTER ROLE [db_ddladmin] ADD MEMBER [net38]
+GO
+ALTER ROLE [db_backupoperator] ADD MEMBER [net38]
+GO
+ALTER ROLE [db_datareader] ADD MEMBER [net38]
+GO
+ALTER ROLE [db_datawriter] ADD MEMBER [net38]
+GO
+ALTER ROLE [db_denydatareader] ADD MEMBER [net38]
+GO
+ALTER ROLE [db_denydatawriter] ADD MEMBER [net38]
+GO
+/****** Object:  Table [dbo].[_permissions]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[_permissions](
+	[privileges] [bigint] NULL,
+	[idp] [int] IDENTITY(1,1) NOT NULL,
+	[description] [varchar](50) NULL,
+ CONSTRAINT [PK_permissions] PRIMARY KEY CLUSTERED 
+(
+	[idp] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[commissions]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[commissions](
+	[description] [varchar](50) NULL,
+	[yearspecialty] [int] NULL,
+	[planid] [int] NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[courses]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[courses](
+	[quota] [int] NULL,
+	[subject] [int] NULL,
+	[commission] [int] NULL,
+	[yearcourse] [int] NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[inscriptions]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[inscriptions](
+	[student] [int] NULL,
+	[course] [int] NULL,
+	[condition] [int] NULL,
+	[qualification] [float] NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PK__inscript__3213E83F9925F07A] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[persons]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[persons](
+	[name] [varchar](50) NULL,
+	[lastname] [varchar](50) NULL,
+	[email] [varchar](50) NULL,
+	[birthdate] [varchar](50) NULL,
+	[planid] [int] NULL,
+	[filenumber] [int] NULL,
+	[phonenumber] [varchar](50) NULL,
+	[address] [varchar](50) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[typeperson] [int] NULL,
+ CONSTRAINT [PK__persons__3213E83F660D8BA8] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[plans]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[plans](
+	[description] [nchar](10) NULL,
+	[specialty] [int] NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[specialties]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[specialties](
+	[description] [varchar](50) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PK__specialt__3213E83FC443C533] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[subjects]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[subjects](
+	[description] [varchar](50) NULL,
+	[weeklyhs] [int] NULL,
+	[totalhs] [int] NULL,
+	[planid] [int] NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[teachercourses]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[teachercourses](
+	[teacher] [int] NULL,
+	[course] [int] NULL,
+	[position] [int] NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PK__teacherc__3213E83F88D614A2] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[users]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[users](
+	[name] [varchar](50) NULL,
+	[username] [varchar](50) NULL,
+	[password] [varchar](50) NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[lastname] [varchar](50) NULL,
+	[email] [varchar](50) NULL,
+	[enable] [bit] NULL,
+	[person] [int] NULL,
+	[permission] [int] NULL,
+ CONSTRAINT [PK__users__3213E83F1EE9DDA6] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[_permissions] ON 
+
+INSERT [dbo].[_permissions] ([privileges], [idp], [description]) VALUES (2147483647, 1, N'Admin')
+INSERT [dbo].[_permissions] ([privileges], [idp], [description]) VALUES (117440512, 2, N'Student')
+INSERT [dbo].[_permissions] ([privileges], [idp], [description]) VALUES (15728640, 3, N'Academic Office')
+INSERT [dbo].[_permissions] ([privileges], [idp], [description]) VALUES (255, 4, N'Student Office')
+SET IDENTITY_INSERT [dbo].[_permissions] OFF
+SET IDENTITY_INSERT [dbo].[commissions] ON 
+
+INSERT [dbo].[commissions] ([description], [yearspecialty], [planid], [id]) VALUES (N'301', 3, 5, 4)
+INSERT [dbo].[commissions] ([description], [yearspecialty], [planid], [id]) VALUES (N'101', 1, 1002, 5)
+INSERT [dbo].[commissions] ([description], [yearspecialty], [planid], [id]) VALUES (N'202', 2, 1002, 6)
+INSERT [dbo].[commissions] ([description], [yearspecialty], [planid], [id]) VALUES (N'Superior', 2017, 4, 7)
+INSERT [dbo].[commissions] ([description], [yearspecialty], [planid], [id]) VALUES (N'prueba', 2017, 4, 8)
+SET IDENTITY_INSERT [dbo].[commissions] OFF
+SET IDENTITY_INSERT [dbo].[courses] ON 
+
+INSERT [dbo].[courses] ([quota], [subject], [commission], [yearcourse], [id]) VALUES (2, 4, 4, 2017, 2)
+INSERT [dbo].[courses] ([quota], [subject], [commission], [yearcourse], [id]) VALUES (1, 3, 5, 2017, 3)
+INSERT [dbo].[courses] ([quota], [subject], [commission], [yearcourse], [id]) VALUES (1, 5, 6, 2017, 4)
+INSERT [dbo].[courses] ([quota], [subject], [commission], [yearcourse], [id]) VALUES (5, 3, 7, 2017, 6)
+SET IDENTITY_INSERT [dbo].[courses] OFF
+SET IDENTITY_INSERT [dbo].[inscriptions] ON 
+
+INSERT [dbo].[inscriptions] ([student], [course], [condition], [qualification], [id]) VALUES (42705, 6, 2, 2, 36)
+INSERT [dbo].[inscriptions] ([student], [course], [condition], [qualification], [id]) VALUES (42703, 6, NULL, 5, 46)
+INSERT [dbo].[inscriptions] ([student], [course], [condition], [qualification], [id]) VALUES (42706, 6, NULL, 5, 47)
+INSERT [dbo].[inscriptions] ([student], [course], [condition], [qualification], [id]) VALUES (42704, 6, NULL, 1, 48)
+SET IDENTITY_INSERT [dbo].[inscriptions] OFF
+SET IDENTITY_INSERT [dbo].[persons] ON 
+
+INSERT [dbo].[persons] ([name], [lastname], [email], [birthdate], [planid], [filenumber], [phonenumber], [address], [id], [typeperson]) VALUES (N'Ezequiel', N'Castaño', N'elcg0@gmx.com', N'14/12/1995', 4, 42704, N'4855258', N'Gal', 8, 0)
+INSERT [dbo].[persons] ([name], [lastname], [email], [birthdate], [planid], [filenumber], [phonenumber], [address], [id], [typeperson]) VALUES (N'Ezequiel', N'Castaño', N'elcg@gmx.com', N'14/12/1995', 4, 42703, N'4855258', N'Gálvez 1374', 9, 0)
+INSERT [dbo].[persons] ([name], [lastname], [email], [birthdate], [planid], [filenumber], [phonenumber], [address], [id], [typeperson]) VALUES (N'Ezequiel', N'Porta', N'asd@fas.com', N'14/12/1995', NULL, 42701, N'4855555', N'asd', 10, 1)
+INSERT [dbo].[persons] ([name], [lastname], [email], [birthdate], [planid], [filenumber], [phonenumber], [address], [id], [typeperson]) VALUES (N'Ezequiel', N'Castaño', N'as@asd.com', N'14/12/1995', 4, 42705, N'4855258', N'asd', 11, 0)
+INSERT [dbo].[persons] ([name], [lastname], [email], [birthdate], [planid], [filenumber], [phonenumber], [address], [id], [typeperson]) VALUES (N'Ezequiel', N'Castaño', N'elcg6@gmx.com', N'14/12/1995', 4, 42706, N'4855258', N'Gálvez 1374', 12, 0)
+INSERT [dbo].[persons] ([name], [lastname], [email], [birthdate], [planid], [filenumber], [phonenumber], [address], [id], [typeperson]) VALUES (N'', N'', N'', N'', NULL, 5, N'', N'', 13, 0)
+SET IDENTITY_INSERT [dbo].[persons] OFF
+SET IDENTITY_INSERT [dbo].[plans] ON 
+
+INSERT [dbo].[plans] ([description], [specialty], [id]) VALUES (N'2008      ', 3, 3)
+INSERT [dbo].[plans] ([description], [specialty], [id]) VALUES (N'2012      ', 1, 4)
+INSERT [dbo].[plans] ([description], [specialty], [id]) VALUES (N'2014      ', 4, 5)
+INSERT [dbo].[plans] ([description], [specialty], [id]) VALUES (N'2017 Ind  ', 6, 1002)
+SET IDENTITY_INSERT [dbo].[plans] OFF
+SET IDENTITY_INSERT [dbo].[specialties] ON 
+
+INSERT [dbo].[specialties] ([description], [id]) VALUES (N'Sistemas', 1)
+INSERT [dbo].[specialties] ([description], [id]) VALUES (N'Civil', 3)
+INSERT [dbo].[specialties] ([description], [id]) VALUES (N'Química', 4)
+INSERT [dbo].[specialties] ([description], [id]) VALUES (N'Eléctrica', 5)
+INSERT [dbo].[specialties] ([description], [id]) VALUES (N'Industrial', 6)
+SET IDENTITY_INSERT [dbo].[specialties] OFF
+SET IDENTITY_INSERT [dbo].[subjects] ON 
+
+INSERT [dbo].[subjects] ([description], [weeklyhs], [totalhs], [planid], [id]) VALUES (N'Superior', 3, 96, 4, 3)
+INSERT [dbo].[subjects] ([description], [weeklyhs], [totalhs], [planid], [id]) VALUES (N'Ing', 2, 24, 4, 4)
+INSERT [dbo].[subjects] ([description], [weeklyhs], [totalhs], [planid], [id]) VALUES (N'Matemática', 3, 96, 1002, 5)
+SET IDENTITY_INSERT [dbo].[subjects] OFF
+SET IDENTITY_INSERT [dbo].[teachercourses] ON 
+
+INSERT [dbo].[teachercourses] ([teacher], [course], [position], [id]) VALUES (42701, 6, 0, 11)
+INSERT [dbo].[teachercourses] ([teacher], [course], [position], [id]) VALUES (42701, 3, 0, 13)
+INSERT [dbo].[teachercourses] ([teacher], [course], [position], [id]) VALUES (42701, 4, 0, 14)
+INSERT [dbo].[teachercourses] ([teacher], [course], [position], [id]) VALUES (42701, 2, 0, 15)
+SET IDENTITY_INSERT [dbo].[teachercourses] OFF
+SET IDENTITY_INSERT [dbo].[users] ON 
+
+INSERT [dbo].[users] ([name], [username], [password], [id], [lastname], [email], [enable], [person], [permission]) VALUES (N'Ezequiel', N'elcg', N'40bd001563085fc35165329ea1ff5c5ecbdbbeef', 1007, N'Castaño', N'elcg@gmx', NULL, NULL, NULL)
+INSERT [dbo].[users] ([name], [username], [password], [id], [lastname], [email], [enable], [person], [permission]) VALUES (N'Ezequiel', N'ezecast', N'40bd001563085fc35165329ea1ff5c5ecbdbbeef', 1008, N'Porta', N'eporta@gmail', NULL, NULL, NULL)
+INSERT [dbo].[users] ([name], [username], [password], [id], [lastname], [email], [enable], [person], [permission]) VALUES (N'Matias', N'Matias', N'40bd001563085fc35165329ea1ff5c5ecbdbbeef', 1009, N'Mulassi', N'm@m', NULL, NULL, NULL)
+INSERT [dbo].[users] ([name], [username], [password], [id], [lastname], [email], [enable], [person], [permission]) VALUES (N'Ezequiel', N'skielcast', N'40bd001563085fc35165329ea1ff5c5ecbdbbeef', 1010, N'Castaño', N'elcg@gmx.com', NULL, NULL, NULL)
+INSERT [dbo].[users] ([name], [username], [password], [id], [lastname], [email], [enable], [person], [permission]) VALUES (N'Ezequiel', N'skielcast2', N'40bd001563085fc35165329ea1ff5c5ecbdbbeef', 1011, N'Castaño', N'elcg2@gmx.com', NULL, 42703, NULL)
+INSERT [dbo].[users] ([name], [username], [password], [id], [lastname], [email], [enable], [person], [permission]) VALUES (N'Ezequiel2', N'elcg2', N'40bd001563085fc35165329ea1ff5c5ecbdbbeef', 1012, N'Castaño2', N'elcg3@gmx.com', NULL, 42704, NULL)
+INSERT [dbo].[users] ([name], [username], [password], [id], [lastname], [email], [enable], [person], [permission]) VALUES (N'Ezequiel', N'sk', N'40bd001563085fc35165329ea1ff5c5ecbdbbeef', 1013, N'Castaño', N'sk@gmx.com', NULL, 42705, 1)
+INSERT [dbo].[users] ([name], [username], [password], [id], [lastname], [email], [enable], [person], [permission]) VALUES (N'Matías', N'matias3', N'40bd001563085fc35165329ea1ff5c5ecbdbbeef', 1014, N'Mulassi', N'ma@ti.as', NULL, 42705, 2)
+INSERT [dbo].[users] ([name], [username], [password], [id], [lastname], [email], [enable], [person], [permission]) VALUES (NULL, N'sk1', N'40bd001563085fc35165329ea1ff5c5ecbdbbeef', 1015, NULL, NULL, NULL, 42701, 2)
+SET IDENTITY_INSERT [dbo].[users] OFF
+/****** Object:  Index [UQ__persons__11954A90CD8642A9]    Script Date: 25/10/2017 14:15:09 ******/
+ALTER TABLE [dbo].[persons] ADD UNIQUE NONCLUSTERED 
+(
+	[filenumber] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+/****** Object:  Index [UQ__persons__11954A90FB0C22C3]    Script Date: 25/10/2017 14:15:09 ******/
+ALTER TABLE [dbo].[persons] ADD UNIQUE NONCLUSTERED 
+(
+	[filenumber] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[users] ADD  CONSTRAINT [DF_users_permissions]  DEFAULT ((2)) FOR [permission]
+GO
+ALTER TABLE [dbo].[commissions]  WITH CHECK ADD  CONSTRAINT [FK_Commission_plans] FOREIGN KEY([planid])
+REFERENCES [dbo].[plans] ([id])
+GO
+ALTER TABLE [dbo].[commissions] CHECK CONSTRAINT [FK_Commission_plans]
+GO
+ALTER TABLE [dbo].[courses]  WITH CHECK ADD  CONSTRAINT [FK_course_commissions] FOREIGN KEY([commission])
+REFERENCES [dbo].[commissions] ([id])
+GO
+ALTER TABLE [dbo].[courses] CHECK CONSTRAINT [FK_course_commissions]
+GO
+ALTER TABLE [dbo].[courses]  WITH CHECK ADD  CONSTRAINT [FK_course_subjects] FOREIGN KEY([subject])
+REFERENCES [dbo].[subjects] ([id])
+GO
+ALTER TABLE [dbo].[courses] CHECK CONSTRAINT [FK_course_subjects]
+GO
+ALTER TABLE [dbo].[inscriptions]  WITH CHECK ADD  CONSTRAINT [FK_inscriptions_courses] FOREIGN KEY([course])
+REFERENCES [dbo].[courses] ([id])
+GO
+ALTER TABLE [dbo].[inscriptions] CHECK CONSTRAINT [FK_inscriptions_courses]
+GO
+ALTER TABLE [dbo].[inscriptions]  WITH CHECK ADD  CONSTRAINT [FK_inscriptions_persons] FOREIGN KEY([student])
+REFERENCES [dbo].[persons] ([filenumber])
+GO
+ALTER TABLE [dbo].[inscriptions] CHECK CONSTRAINT [FK_inscriptions_persons]
+GO
+ALTER TABLE [dbo].[persons]  WITH CHECK ADD  CONSTRAINT [FK_persons_plans] FOREIGN KEY([planid])
+REFERENCES [dbo].[plans] ([id])
+GO
+ALTER TABLE [dbo].[persons] CHECK CONSTRAINT [FK_persons_plans]
+GO
+ALTER TABLE [dbo].[plans]  WITH CHECK ADD  CONSTRAINT [FK_plans_specialties] FOREIGN KEY([specialty])
+REFERENCES [dbo].[specialties] ([id])
+GO
+ALTER TABLE [dbo].[plans] CHECK CONSTRAINT [FK_plans_specialties]
+GO
+ALTER TABLE [dbo].[subjects]  WITH CHECK ADD  CONSTRAINT [FK_subjects_plans] FOREIGN KEY([planid])
+REFERENCES [dbo].[plans] ([id])
+GO
+ALTER TABLE [dbo].[subjects] CHECK CONSTRAINT [FK_subjects_plans]
+GO
+ALTER TABLE [dbo].[teachercourses]  WITH CHECK ADD  CONSTRAINT [FK_teachercourses_courses] FOREIGN KEY([course])
+REFERENCES [dbo].[courses] ([id])
+GO
+ALTER TABLE [dbo].[teachercourses] CHECK CONSTRAINT [FK_teachercourses_courses]
+GO
+ALTER TABLE [dbo].[teachercourses]  WITH CHECK ADD  CONSTRAINT [FK_teachercourses_persons] FOREIGN KEY([teacher])
+REFERENCES [dbo].[persons] ([filenumber])
+GO
+ALTER TABLE [dbo].[teachercourses] CHECK CONSTRAINT [FK_teachercourses_persons]
+GO
+ALTER TABLE [dbo].[users]  WITH CHECK ADD  CONSTRAINT [FK_users_permissions] FOREIGN KEY([permission])
+REFERENCES [dbo].[_permissions] ([idp])
+GO
+ALTER TABLE [dbo].[users] CHECK CONSTRAINT [FK_users_permissions]
+GO
+ALTER TABLE [dbo].[users]  WITH CHECK ADD  CONSTRAINT [FK_users_users] FOREIGN KEY([id])
+REFERENCES [dbo].[users] ([id])
+GO
+ALTER TABLE [dbo].[users] CHECK CONSTRAINT [FK_users_users]
+GO
+/****** Object:  StoredProcedure [dbo].[AttendingList]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[AttendingList] 
+	-- Add the parameters for the stored procedure here
+	@filenumber int = 0, 
+	@course int = 0
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	Select per.name, per.lastname, per.filenumber
+	from teachercourses tcs
+	inner join courses cs
+		on cs.id = tcs.course
+	inner join inscriptions ins
+		on ins.course = cs.id
+	inner join persons per
+		on ins.student = per.filenumber
+	where tcs.teacher = @filenumber and cs.id = @course ;
+
+END
+GO
+/****** Object:  StoredProcedure [dbo].[BestStudentByYear]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[BestStudentByYear]
+	-- Add the parameters for the stored procedure here
+	@year int = 0
+
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	SELECT TOP 10 per.name, per.lastname, per.filenumber, AVG(ins.qualification) as Average
+	from commissions com
+	inner join courses cs
+		on cs.commission = com.id
+	inner join inscriptions ins
+		on cs.id= ins.course
+	inner join persons per
+		on per.filenumber = ins.student
+	where com.yearspecialty = @year
+	group by per.name, per.lastname, per.filenumber
+	order by AVG(ins.qualification) DESC
+
+
+END
+GO
+/****** Object:  StoredProcedure [dbo].[CoursesList]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[CoursesList]
+	-- Add the parameters for the stored procedure here
+	 @p1 int =  0
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	select cs.id, cm.description
+	from courses cs
+	left join inscriptions ins
+		on ins.course = cs.id
+	inner join commissions cm
+		on cs.commission = cm.id
+	where cs.subject = @p1
+	group by cs.id, cs.quota, cm.description
+	having count(ins.student) < cs.quota
+END
+GO
+/****** Object:  StoredProcedure [dbo].[StudentAverage]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[StudentAverage]
+	-- Add the parameters for the stored procedure here
+	@filenumber int = 0
+	
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	Select AVG(ins.qualification)
+	from inscriptions ins
+	where ins.student = @filenumber
+
+
+END
+GO
+/****** Object:  StoredProcedure [dbo].[SubjectsList2]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[SubjectsList2]
+	-- Add the parameters for the stored procedure here
+	 @p1 int =  0,
+	 @p2 int =  0
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	CREATE TABLE #SUBJECTs(
+			id int,
+			description varchar(50)
+		);
+                
+	INSERT INTO #SUBJECTs
+	select sb.id, sb.description
+	from subjects sb
+	where sb.planid = @p2 and sb.id not in ( 
+		select cs.subject 
+		from courses cs 
+		inner join inscriptions ins 
+			on ins.course = cs.id 
+		where ins.student = @p1 );
+
+	SELECT DISTINCT sb.id, sb.description
+	FROM #SUBJECTs sb
+	inner join courses cs
+		on sb.id = cs.subject
+	left join inscriptions ins
+		on ins.course = cs.id
+	group by sb.id, sb.description, cs.quota
+	having count(ins.student) < cs.quota;
+END
+GO
+/****** Object:  StoredProcedure [dbo].[TeacherCoursesList]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[TeacherCoursesList]
+	-- Add the parameters for the stored procedure here
+	@p1 int = 0, 
+	@p2 int = 0
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	CREATE TABLE #COURSEs(
+			id int,
+		);
+
+	INSERT INTO #COURSEs
+	SELECT cs.id
+	FROM courses cs
+	inner join teachercourses tsc
+		on tsc.course = cs.id
+	where tsc.teacher = @p2;
+
+	SELECT cs.id, cm.description
+	from courses cs
+	inner join commissions cm
+		on cm.id = cs.commission
+	left join #COURSEs cs2
+		on cs2.id = cs.id
+	where cs2.id is null and cs.subject = @p1;
+
+END
+GO
+/****** Object:  StoredProcedure [dbo].[TeacherSubjectList]    Script Date: 25/10/2017 14:15:09 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE PROCEDURE [dbo].[TeacherSubjectList] 
+	-- Add the parameters for the stored procedure here
+	@p1 int = 0 
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+
+	CREATE TABLE #COURSEs(
+			id int,
+			subject int
+		);
+                
+	INSERT INTO #COURSEs
+	select cs.id, cs.subject
+	from courses cs 
+	inner join teachercourses tcs 
+		on tcs.course = cs.id 
+	where tcs.teacher = @p1;
+
+	SELECT DISTINCT sb.id, sb.description
+	FROM subjects sb
+	inner join courses cs
+		on cs.subject = sb.id
+	left join #COURSEs cs2
+		on cs2.id = cs.id
+	where cs2.id is null
+
+END
+GO

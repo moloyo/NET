@@ -1,0 +1,6 @@
+E:\Joaquin\Documents\Workspaces\Labs\Unidadad4Lab03Ej2\bin\Debug\Unidadad4Lab03Ej2.exe.config
+E:\Joaquin\Documents\Workspaces\Labs\Unidadad4Lab03Ej2\bin\Debug\Unidadad4Lab03Ej2.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidadad4Lab03Ej2\bin\Debug\Unidadad4Lab03Ej2.pdb
+E:\Joaquin\Documents\Workspaces\Labs\Unidadad4Lab03Ej2\obj\Debug\Unidad4Lab03Ej2.csprojResolveAssemblyReference.cache
+E:\Joaquin\Documents\Workspaces\Labs\Unidadad4Lab03Ej2\obj\Debug\Unidadad4Lab03Ej2.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidadad4Lab03Ej2\obj\Debug\Unidadad4Lab03Ej2.pdb

@@ -1,0 +1,10 @@
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab1\bin\Debug\Unidad3Lab1.exe.config
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab1\bin\Debug\Unidad3Lab1.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab1\bin\Debug\Unidad3Lab1.pdb
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab1\obj\Debug\Unidad3Lab1.csprojResolveAssemblyReference.cache
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab1\obj\Debug\Unidad3Lab1.formMain.resources
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab1\obj\Debug\Unidad3Lab1.formLogin.resources
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab1\obj\Debug\Unidad3Lab1.Properties.Resources.resources
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab1\obj\Debug\Unidad3Lab1.csproj.GenerateResource.Cache
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab1\obj\Debug\Unidad3Lab1.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab1\obj\Debug\Unidad3Lab1.pdb

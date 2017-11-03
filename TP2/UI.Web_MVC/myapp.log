@@ -1,0 +1,324 @@
+INFO  2017-10-26 01:07:52 – [12] User Log Start method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Bussiness.Logic.LogsLogic.Logger 
+ type:Bussiness.Logic.LogsLogic 
+ line: 13 
+INFO  2017-10-26 01:07:52 – [12] Web Application Start method:Index 
+ stacktrace:System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod > System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index 
+ type:UI.Web_MVC.Controllers.HomeController 
+ line: 14 
+INFO  2017-10-31 10:55:09 – [10] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 10:55:48 – [10] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 10:56:04 – [12] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 10:56:44 – [10] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 10:57:23 – [10] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 10:57:33 – [11] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 10:58:07 – [10] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 10:58:11 – [10] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 10:58:11 – [12] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 13:52:46 – [6] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 13:52:51 – [14] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 13:52:51 – [19] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 13:54:34 – [4] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 13:55:52 – [4] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 13:55:54 – [12] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 13:55:54 – [4] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 13:59:05 – [4] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:02:25 – [21] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:02:30 – [6] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:02:30 – [12] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:07:57 – [33] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:08:02 – [26] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:08:02 – [29] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:10:02 – [30] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:10:07 – [36] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:10:07 – [20] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:12:01 – [39] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:12:14 – [33] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:12:14 – [32] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:14:09 – [9] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:14:14 – [9] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:14:14 – [9] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:32:50 – [3] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:32:55 – [4] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:32:55 – [10] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:34:17 – [15] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:34:17 – [10] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:35:05 – [8] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:35:09 – [7] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:35:09 – [13] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:38:28 – [10] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:38:33 – [10] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:38:33 – [12] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:41:56 – [9] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:42:01 – [9] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:42:01 – [13] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:43:54 – [9] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:45:05 – [12] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:45:05 – [9] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:45:42 – [7] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:45:45 – [7] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:45:46 – [7] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:47:46 – [7] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:47:55 – [7] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:47:55 – [7] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:54:12 – [8] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:54:16 – [8] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:54:16 – [8] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 15:06:10 – [5] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 15:06:17 – [38] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 15:06:17 – [40] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:14:44 – [5] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:14:51 – [5] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:14:51 – [10] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:24:09 – [8] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:24:31 – [9] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:24:31 – [17] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:45:10 – [26] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:45:18 – [29] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:45:18 – [7] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:54:47 – [7] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:54:54 – [10] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:54:54 – [10] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:58:59 – [9] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:59:03 – [9] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 13:59:03 – [14] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 15:15:40 – [9] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 15:16:41 – [14] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.LogInController.Index > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 15:16:41 – [14] Logeando desde util3 method:Logger 
+ stacktrace:System.Web.Mvc.ReflectedActionDescriptor.Execute > System.Web.Mvc.ActionMethodDispatcher.Execute > ?.lambda_method > UI.Web_MVC.Controllers.HomeController.Index > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 

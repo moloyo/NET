@@ -1,0 +1,4 @@
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab2\obj\Debug\Unidad3Lab2.csprojResolveAssemblyReference.cache
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab2\obj\Debug\Unidad3Lab2.formListaUsuarios.resources
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab2\obj\Debug\Unidad3Lab2.Properties.Resources.resources
+E:\Joaquin\Documents\Workspaces\Labs\Unidad3Lab2\obj\Debug\Unidad3Lab2.csproj.GenerateResource.Cache

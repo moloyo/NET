@@ -1,0 +1,31 @@
+﻿@using System
+@{
+    // 404 Not Found
+    //
+    // This view was added by NotFoundMVC
+    // For inspiration see: https://www.google.be/search?q=example+404+page
+    //
+    // The following properties are available in the ViewBag:
+    // ViewData["RequestedUrl"]
+    // ViewData["ReferrerUrl"]
+    //
+
+    ViewBag.Title = "Page Not Found";
+}
+
+<section class="dialog box">
+    <div class="container clearfix">
+        <h1>
+            <i class="large fa fa-bug"></i>404
+        </h1>
+        <h2>Could not find the page: @ViewBag.RequestedUrl</h2>
+        <h3>We're Sorry but the page you've requested doesn't exist</h3>
+    </div>
+    @if (ViewBag.ReferrerUrl != null) {
+        <p>Go back to the <a href="@ViewBag.ReferrerUrl">previous page</a>.</p>
+    }
+</section>
+
+
+@* Error page must be longer than 512 bytes for IE and Chrome to show it. So add padding in case we're short. *@
+@(new string(' ', 512))

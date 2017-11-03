@@ -1,0 +1,58 @@
+﻿<Page x:Class="UI.WPF.ReportAttendingList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:UI.WPF"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Title="ReportAttendingList"
+      d:DesignHeight="300"
+      d:DesignWidth="300"
+      mc:Ignorable="d">
+    <DockPanel>
+        <DockPanel HorizontalAlignment="Center"
+                   DockPanel.Dock="Top"
+                   LastChildFill="False">
+            <TextBlock DockPanel.Dock="Left" Text="Specialty" />
+            <ComboBox Name="CboSpecialties"
+                      Width="150"
+                      DisplayMemberPath="Description"
+                      DockPanel.Dock="Left"
+                      SelectionChanged="CboSpecialties_SelectionChanged" />
+            <TextBlock DockPanel.Dock="Left" Text="Plan" />
+            <ComboBox Name="CboPlans"
+                      Width="150"
+                      DisplayMemberPath="Description"
+                      DockPanel.Dock="Left"
+                      SelectionChanged="CboPlans_SelectionChanged" />
+            <TextBlock DockPanel.Dock="Left" Text="Subject" />
+            <ComboBox Name="CboSubjects"
+                      Width="200"
+                      Margin="5,0,5,0"
+                      DisplayMemberPath="Description"
+                      DockPanel.Dock="Left"
+                      SelectionChanged="CboSubjects_SelectionChanged" />
+            <TextBlock DockPanel.Dock="Left" Text="Commission" />
+            <ComboBox Name="CboCourses"
+                      Width="200"
+                      Margin="5,0,5,0"
+                      DisplayMemberPath="Description"
+                      DockPanel.Dock="Left" />
+
+        </DockPanel>
+        <StackPanel HorizontalAlignment="Center"
+                    DockPanel.Dock="Top"
+                    Orientation="Horizontal">
+            <Button Width="200"
+                    Click="Show_Click"
+                    Content="Show"
+                    DockPanel.Dock="Left" />
+            <Button Width="200"
+                    Click="Export_Click"
+                    Content="Export as PDF"
+                    DockPanel.Dock="Left" />
+        </StackPanel>
+        <DataGrid Name="reportGrid"
+                  DockPanel.Dock="Top"
+                  ItemsSource="{Binding}" />
+    </DockPanel>
+</Page>

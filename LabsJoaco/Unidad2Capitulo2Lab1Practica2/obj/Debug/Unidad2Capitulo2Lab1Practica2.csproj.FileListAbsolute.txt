@@ -1,0 +1,4 @@
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo2Lab1Practica2\bin\Debug\Clases.dll
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo2Lab1Practica2\bin\Debug\Clases.pdb
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo2Lab1Practica2\obj\Debug\Clases.dll
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo2Lab1Practica2\obj\Debug\Clases.pdb

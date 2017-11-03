@@ -1,0 +1,6 @@
+C:\Users\joaqu\Source\Workspaces\NET\TP2\Business.Entities\bin\Release\Business.Entities.dll
+C:\Users\joaqu\Source\Workspaces\NET\TP2\Business.Entities\bin\Release\Business.Entities.pdb
+C:\Users\joaqu\Source\Workspaces\NET\TP2\Business.Entities\obj\Release\Business.Entities.csprojResolveAssemblyReference.cache
+C:\Users\joaqu\Source\Workspaces\NET\TP2\Business.Entities\obj\Release\Business.Entities.csproj.CoreCompileInputs.cache
+C:\Users\joaqu\Source\Workspaces\NET\TP2\Business.Entities\obj\Release\Business.Entities.dll
+C:\Users\joaqu\Source\Workspaces\NET\TP2\Business.Entities\obj\Release\Business.Entities.pdb

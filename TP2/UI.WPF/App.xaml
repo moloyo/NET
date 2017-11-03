@@ -1,0 +1,75 @@
+﻿<Application x:Class="UI.WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:UI.WPF"
+             StartupUri="MainWindow.xaml">
+
+    <!--
+        primary   #0d47a1
+        P — Dark  #002171
+        P — Light #5472d3
+        secondary #212121
+        S — Dark  #000000
+        S — Light #484848
+        Text      #ffffff
+    -->
+    <Application.Resources>
+        <!--
+        <Style TargetType="Menu">
+            <Setter Property="Foreground" Value="#ffffff" />
+            <Setter Property="Background" Value="#002171" />
+            <Setter Property="FontSize" Value="24" />
+        </Style>
+        <Style TargetType="MenuItem">
+            <Setter Property="Foreground" Value="#ffffff" />
+            <Setter Property="Background" Value="#5472d3" />
+            <Setter Property="FontSize" Value="24" />
+        </Style>
+        -->
+        <Style x:Key="Content" TargetType="Frame">
+            <Setter Property="Width" Value="600" />
+        </Style>
+        <Style TargetType="Menu">
+            <Setter Property="FontSize" Value="24" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="#ffffff" />
+            <Setter Property="Background" Value="#000000" />
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Margin" Value="10,0,10,0" />
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="VerticalAlignment" Value="center" />
+            <Setter Property="Margin" Value="5,0,5,0" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="22" />
+            <Setter Property="Width" Value="auto" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="22" />
+            <Setter Property="Width" Value="auto" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Foreground" Value="#000000" />
+            <Setter Property="FontSize" Value="22" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="VerticalAlignment" Value="center" />
+        </Style>
+        <Style TargetType="PasswordBox">
+            <Setter Property="Foreground" Value="#000000" />
+            <Setter Property="FontSize" Value="22" />
+        </Style>
+        <ItemsPanelTemplate x:Key="MenuItemPanelTemplate">
+            <StackPanel Margin="-30,0,-30,0" Background="White" />
+        </ItemsPanelTemplate>
+        <Style TargetType="MenuItem">
+            <Setter Property="FlowDirection" Value="LeftToRight" />
+            <Setter Property="ItemsPanel" Value="{StaticResource MenuItemPanelTemplate}" />
+        </Style>
+    </Application.Resources>
+</Application>

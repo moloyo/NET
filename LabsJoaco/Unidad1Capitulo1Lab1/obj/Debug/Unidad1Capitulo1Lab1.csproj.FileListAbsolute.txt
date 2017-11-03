@@ -1,0 +1,7 @@
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab1\bin\Debug\Lab01.exe.config
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab1\bin\Debug\Lab01.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab1\bin\Debug\Lab01.pdb
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab1\obj\Debug\Unidad1Capitulo1Lab1.csprojResolveAssemblyReference.cache
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab1\obj\Debug\Lab01.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab1\obj\Debug\Lab01.pdb
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab1\obj\Debug\Unidad1Capitulo1Lab1.csproj.CoreCompileInputs.cache

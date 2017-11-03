@@ -1,0 +1,6 @@
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab2\bin\Debug\Lab02.exe.config
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab2\bin\Debug\Lab02.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab2\bin\Debug\Lab02.pdb
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab2\obj\Debug\Unidad1Capitulo1Lab2.csprojResolveAssemblyReference.cache
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab2\obj\Debug\Lab02.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad1Capitulo1Lab2\obj\Debug\Lab02.pdb

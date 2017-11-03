@@ -1,0 +1,94 @@
+Asistencia de alumnos:
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[AttendingList] 
+	@filenumber int = 0, 
+	@course int = 0
+AS
+BEGIN
+
+	SET NOCOUNT ON;
+
+	Select per.name, per.lastname, per.filenumber
+	from teachercourses tcs
+	inner join courses cs
+		on cs.id = tcs.course
+	inner join inscriptions ins
+		on ins.course = cs.id
+	inner join persons per
+		on ins.student = per.filenumber
+	where tcs.teacher = @filenumber and cs.id = @course ;
+
+END
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+Promedio de notas de un alumno
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE StudentAverage
+	@filenumber int = 0
+	
+AS
+BEGIN
+
+	SET NOCOUNT ON;
+
+	Select isnull(AVG(ins.qualification),0) as Promedio
+	from inscriptions ins
+	where ins.student = @filenumber
+
+
+END
+GO
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Mejores 10 promedios dado un año
+
+
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE BestStudentByYear
+	@year int = 0
+
+AS
+BEGIN
+
+	SET NOCOUNT ON;
+
+	SELECT TOP 10 per.name, per.lastname, per.filenumber, isnull(AVG(ins.qualification), 0) as Promedio
+	from commissions com
+	inner join courses cs
+		on cs.commission = com.id
+	inner join inscriptions ins
+		on cs.id= ins.course
+	inner join persons per
+		on per.filenumber = ins.student
+	where com.yearspecialty = @year
+	group by per.name, per.lastname, per.filenumber
+	order by Promedio
+
+
+END
+GO
+
+

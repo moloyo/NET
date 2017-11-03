@@ -1,0 +1,68 @@
+INFO  2017-10-31 10:37:35 – [1] Hello World method:OnStartup 
+ stacktrace:System.Windows.Threading.DispatcherOperation.InvokeImpl > System.Windows.Threading.ExceptionWrapper.TryCatchWhen > System.Windows.Threading.ExceptionWrapper.InternalRealCall > System.Windows.Application.<.ctor>b__1_0 > UI.WPF.App.OnStartup 
+ type:UI.WPF.App 
+ line: 15 
+INFO  2017-10-31 10:37:35 – [1] Application Start method:.ctor 
+ stacktrace:System.Activator.CreateInstance > System.RuntimeType.CreateInstanceDefaultCtor > System.RuntimeType.CreateInstanceSlow > System.RuntimeTypeHandle.CreateInstance > UI.WPF.MainWindow..ctor 
+ type:UI.WPF.MainWindow 
+ line: 15 
+INFO  2017-10-31 10:37:57 – [1] User Log Start method:Logger 
+ stacktrace:System.Windows.EventRoute.InvokeHandlersImpl > System.Windows.RoutedEventHandlerInfo.InvokeHandler > UI.WPF.LogInPage.LogIn_Click > Bussiness.Logic.UserLogic.LogIn > Bussiness.Logic.LogsLogic.Logger 
+ type:Bussiness.Logic.LogsLogic 
+ line: 13 
+INFO  2017-10-31 10:51:48 – [1] Hello World method:OnStartup 
+ stacktrace:System.Windows.Threading.DispatcherOperation.InvokeImpl > System.Windows.Threading.ExceptionWrapper.TryCatchWhen > System.Windows.Threading.ExceptionWrapper.InternalRealCall > System.Windows.Application.<.ctor>b__1_0 > UI.WPF.App.OnStartup 
+ type:UI.WPF.App 
+ line: 15 
+INFO  2017-10-31 10:51:48 – [1] Estoy usando Logger desde Útiles method:Logger 
+ stacktrace:System.RuntimeType.CreateInstanceDefaultCtor > System.RuntimeType.CreateInstanceSlow > System.RuntimeTypeHandle.CreateInstance > UI.WPF.MainWindow..ctor > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 10:51:56 – [1] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Windows.EventRoute.InvokeHandlersImpl > System.Windows.RoutedEventHandlerInfo.InvokeHandler > UI.WPF.LogInPage.LogIn_Click > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 10:53:38 – [1] Hello World method:OnStartup 
+ stacktrace:System.Windows.Threading.DispatcherOperation.InvokeImpl > System.Windows.Threading.ExceptionWrapper.TryCatchWhen > System.Windows.Threading.ExceptionWrapper.InternalRealCall > System.Windows.Application.<.ctor>b__1_0 > UI.WPF.App.OnStartup 
+ type:UI.WPF.App 
+ line: 15 
+INFO  2017-10-31 10:53:38 – [1] Estoy usando Logger desde Útiles method:Logger 
+ stacktrace:System.RuntimeType.CreateInstanceDefaultCtor > System.RuntimeType.CreateInstanceSlow > System.RuntimeTypeHandle.CreateInstance > UI.WPF.MainWindow..ctor > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 10:53:46 – [1] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Windows.EventRoute.InvokeHandlersImpl > System.Windows.RoutedEventHandlerInfo.InvokeHandler > UI.WPF.LogInPage.LogIn_Click > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 13:39:05 – [1] Hello World method:OnStartup 
+ stacktrace:System.Windows.Threading.DispatcherOperation.InvokeImpl > System.Windows.Threading.ExceptionWrapper.TryCatchWhen > System.Windows.Threading.ExceptionWrapper.InternalRealCall > System.Windows.Application.<.ctor>b__1_0 > UI.WPF.App.OnStartup 
+ type:UI.WPF.App 
+ line: 15 
+INFO  2017-10-31 13:39:05 – [1] Estoy usando Logger desde Útiles method:Logger 
+ stacktrace:System.RuntimeType.CreateInstanceDefaultCtor > System.RuntimeType.CreateInstanceSlow > System.RuntimeTypeHandle.CreateInstance > UI.WPF.MainWindow..ctor > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 13:39:13 – [1] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Windows.EventRoute.InvokeHandlersImpl > System.Windows.RoutedEventHandlerInfo.InvokeHandler > UI.WPF.LogInPage.LogIn_Click > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-10-31 14:13:56 – [1] Hello World method:OnStartup 
+ stacktrace:System.Windows.Threading.DispatcherOperation.InvokeImpl > System.Windows.Threading.ExceptionWrapper.TryCatchWhen > System.Windows.Threading.ExceptionWrapper.InternalRealCall > System.Windows.Application.<.ctor>b__1_0 > UI.WPF.App.OnStartup 
+ type:UI.WPF.App 
+ line: 15 
+INFO  2017-10-31 14:13:56 – [1] Estoy usando Logger desde Útiles method:Logger 
+ stacktrace:System.RuntimeType.CreateInstanceDefaultCtor > System.RuntimeType.CreateInstanceSlow > System.RuntimeTypeHandle.CreateInstance > UI.WPF.MainWindow..ctor > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 15:38:22 – [1] Hello World method:OnStartup 
+ stacktrace:System.Windows.Threading.DispatcherOperation.InvokeImpl > System.Windows.Threading.ExceptionWrapper.TryCatchWhen > System.Windows.Threading.ExceptionWrapper.InternalRealCall > System.Windows.Application.<.ctor>b__1_0 > UI.WPF.App.OnStartup 
+ type:UI.WPF.App 
+ line: 15 
+INFO  2017-11-01 15:38:22 – [1] Estoy usando Logger desde Útiles method:Logger 
+ stacktrace:System.RuntimeType.CreateInstanceDefaultCtor > System.RuntimeType.CreateInstanceSlow > System.RuntimeTypeHandle.CreateInstance > UI.WPF.MainWindow..ctor > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 
+INFO  2017-11-01 15:40:41 – [1] Logeando desde utiles2 method:Logger 
+ stacktrace:System.Windows.EventRoute.InvokeHandlersImpl > System.Windows.RoutedEventHandlerInfo.InvokeHandler > UI.WPF.LogInPage.LogIn_Click > Bussiness.Logic.UserLogic.LogIn > Util.Logs.Logger 
+ type:Util.Logs 
+ line: 15 

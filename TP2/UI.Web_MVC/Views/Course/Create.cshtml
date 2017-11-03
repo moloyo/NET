@@ -1,0 +1,142 @@
+﻿@model Bussiness.Entities.Course
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    
+    @using (Html.BeginForm()) 
+    {
+        @Html.AntiForgeryToken()
+        
+        <div class="form-horizontal">
+            <h4>Course</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.YearCourse, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.YearCourse, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.YearCourse, "", new { @class = "text-danger" })
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.Quota, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Quota, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Quota, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Specialty</label>
+                <div class="col-md-10">
+                    @Html.DropDownList("specialtyList", ViewBag.AllSpecialties as SelectList, "Choose Specialty")
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Plan</label>
+                <div class="col-md-10">
+                    @Html.DropDownList("planList", new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Description"), "Choose Plan")
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("subjectList", new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Description"), "Choose subject")
+                </div>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(model => model.Commission, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("comissionList", new SelectList(Enumerable.Empty<SelectListItem>(), "Id", "Description"), "Choose Comission")
+                    @Html.ValidationMessageFor(model => model.Commission, "", new { @class = "text-danger" })
+                </div>
+            </div>               
+    
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#specialtyList").change(function () {
+            var sID = $(this).val();
+            $.getJSON("/Commission/LoadPlanBySpecialty", { specialtyId: sID },
+                function (data) {
+                    var select = $("#planList");
+                    select.empty();
+                    select.append($('<option/>', {
+                        value: 0,
+                        text: "Choose Plan"
+                    }));
+                    $.each(data, function (index, itemData) {
+                        select.append($('<option/>', {
+                            value: itemData.Value,
+                            text: itemData.Text
+                        }));
+                    });
+                });
+        });
+        $("#planList").change(function () {
+            var sID = $(this).val();
+            $.getJSON("/Commission/LoadSubjectBySpecialty", { specialtyId: sID },
+                function (data) {
+                    var select = $("#subjectList");
+                    select.empty();
+                    select.append($('<option/>', {
+                        value: 0,
+                        text: "Choose Subject"
+                    }));
+                    $.each(data, function (index, itemData) {
+                        select.append($('<option/>', {
+                            value: itemData.Value,
+                            text: itemData.Text
+                        }));
+                    });
+                });
+            $.getJSON("/Commission/LoadComissionBySpecialty", { specialtyId: sID },
+                function (data) {
+                    var select = $("#comissionList");
+                    select.empty();
+                    select.append($('<option/>', {
+                        value: 0,
+                        text: "Choose Comission"
+                    }));
+                    $.each(data, function (index, itemData) {
+                        select.append($('<option/>', {
+                            value: itemData.Value,
+                            text: itemData.Text
+                        }));
+                    });
+             });
+        });
+    });
+</script>

@@ -1,0 +1,5 @@
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03\bin\Debug\Unidad4Lab03.exe.config
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03\bin\Debug\Unidad4Lab03.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03\bin\Debug\Unidad4Lab03.pdb
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03\obj\Debug\Unidad4Lab03.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03\obj\Debug\Unidad4Lab03.pdb

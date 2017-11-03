@@ -1,0 +1,119 @@
+﻿TODO:
+-✔  Añadir docentes a cursos
+
+-✔  Registro de notas - Dado un profesor logeado, elegir una de las materias en la que 
+	está asignado, elegir la comissión e ingresar un legajo y la nota final e inferir 
+	estado (>4 regular, >6 promovido, <4 recursa)
+
+Tanto en Web como en Escritorio:
+- ABMC de permisos <- parece complicado pero podemos dejarlo para más adelante
+-✔ Log de errores
+
+WEB:
+-✔ Reportes
+- Asignación de profesores a Cursos
+- Registro de Notas
+- ABMC de Estudiantes y Profesores
+-✔ ABMC de cursos
+
+
+-  Reportes:
+	-✔  Listado de asistencia de alumnos: dada una comisión y una materia de un profesor logeado,
+		mostrar todos los alumnos inscriptos
+	-✔  Mostrar los mejores 10 alumnos de un materia para un año en particular de todas las 
+		comisiones
+	-✔  Dado un año, mostrar los 10 mejores promedios a la fecha de todas las carreras de alumnos 
+		que esten actualmente cursando
+
+-  MC de permisos de usuario:
+	-  Asignar permiso a un usuario dado un nombre de usuario y un combo con todos los permisos
+	-  Ver permiso de un usuario dado un nombre de usuario
+
+-  ABMC de permisos:
+	-  Crear un permiso dada una descripción y elegir de varios combos (uno por categoria) 
+		entre las opciones: 
+		-  VER 
+		-  VER Y EDITAR 
+		-  VER EDITAR Y CREAR 
+		-  VER EDITAR, CREAR Y ELIMINAR
+	-  Editar un permiso (idem anterior)
+	-  Borrar un permiso dado su ID
+	-  Consultar permisos 
+
+TODO Adicionales para mejorar nota:
+-✔  Mejorar Layout utilizando Bootstrap
+-  Añadir permisos en sub menues y botones en escritorio
+-✔  Utilizar ventana modal en web para el login (CSS)
+-✔  Generar el reporte en PDF
+-✔  Utilizar Gestor de Reportes (Utilización de librería iTextSharp)
+-✔  Utilizar Gestor de Logs
+
+
+A continuación se añade la consigna para tener de referencia lo que falta:
+
+Requerimientos Funcionales
+-✔ Alta, Baja, Modificaciones y Consulta de Usuarios
+-  Alta, Baja, Modificaciones y Consulta de Permisos
+-✔  Alta, Baja, Modificaciones y Consulta de Alumnos
+-✔  Alta, Baja, Modificaciones y Consulta de Especialidades
+-✔  Alta, Baja, Modificaciones y Consulta de Profesores
+-✔  Alta, Baja, Modificaciones y Consulta de Planes y Materias
+-✔  Alta, Baja, Modificaciones y Consulta de Comisiones
+-✔  Alta, Baja, Modificaciones y Consulta de Cursos
+-✔  Inscripciones de Alumnos a Cursos
+-✔  Registro de Notas
+-✔  2 Reportes
+-✔  Reporte de Alumnos con Mejores Promedios (este requerimiento solo aplica a grupo 
+	de más de 3 integrantes
+
+Web
+
+-✔  Toda la funcionalidad de la aplicación debe implementarse utilizando ASP.NET 
+	(si el grupo así lo desea las opciones de ASP.NET MVC o Silverlight también son válidas)
+-✔ Debe proporcionarse un menú de acceso.
+-✔ Utilizar Master Pages, Hojas de Estilos, Temas y Skins.
+-✔ Implementar validaciones del lado del Cliente y del lado del Servidor.
+-✔  Los reportes deben poder exportarse a formato .pdf.
+-✔  Deben utilizarse User Controls. (Reemplazado con Partial Views)
+-✔ El acceso al sistema debe ser controlado mediante una funcionalidad de login que 
+	solicite usuario y contraseña (Autenticación).
+-  El ABMC de Planes y Materias, el ABMC de Usuarios y Permisos por Módulo tienen que 
+	ser transaccionales desde el punto de vista de la Presentación. Al grabar un Plan 
+	también tienen que grabarse todas sus Materias y al grabar un Usuario también tienen 
+	que grabarse todos sus Permisos por Módulo. (este requerimiento solo aplica a grupo 
+	de más de 3 integrantes)
+
+Windows
+-✔  El ABMC de Usuarios, el de Alumnos y el de Especialidades también tiene que estar 
+	implementado en Windows Forms o WPF
+-✔  Debe proporcionarse un menú de acceso.
+-✔  El acceso al sistema debe ser controlado mediante una funcionalidad de login que 
+	solicite usuario y contraseña (Autenticación).
+
+
+Capa de Negocios
+-✔  Debe realizarse algún tipo de validación de negocios.
+-✔  Si esta validación no es exitosa debe generarse una excepción que la represente de 
+	forma adecuada.
+
+Capa de Datos
+-✔  Debe utilizar algún motor de base de datos para persistir las diferentes entidades.
+-✔  La información de conexión a la base de datos debe centralizarse.
+-✔  Debe utilizar alguna tecnología ADO.NET
+
+Componentes Transversales
+-✔  Las Entidades deben implementarse utilizando Objetos y Colecciones.
+-✔ El proyecto Utilidades debe implementar clases que contengan funcionalidades 
+	reutilizables que se hayan detectado en el proceso de desarrollo de los diferentes 
+	Proyectos (por ejemplo una validación)
+
+Requerimientos Técnicos Adicionales
+-✔  Implementar todas las funcionalidades también en Windows Forms o WPF. (Capa de Presentación)
+-✔  Implementar log de Errores. (Utilidades)(falta agregarlo a útiles)
+-✔  Utilizar Stored Procedures o Entity Framework 0 NHibernate. (Capa de Datos)
+-✔  Implementar control de Acceso por Módulo (Autorización)
+
+Buenas Prácticas
+-  Definir y utilizar un estándar de nomenclatura.
+-✔  Agregar comentarios donde sea necesario.
+-✔  Evitar repetir código reutilizable.

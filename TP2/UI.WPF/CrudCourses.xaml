@@ -1,0 +1,78 @@
+﻿<Page x:Class="UI.WPF.CrudCourses"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:UI.WPF"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Title="CrudCourse"
+      d:DesignHeight="300"
+      d:DesignWidth="1600"
+      mc:Ignorable="d">
+
+    <DockPanel Margin="20">
+        <DockPanel HorizontalAlignment="Center"
+                   DockPanel.Dock="Top"
+                   LastChildFill="False">
+            <TextBlock DockPanel.Dock="Left" Text="ID" />
+            <TextBox x:Name="TxtId"
+                     Width="55"
+                     VerticalAlignment="Center"
+                     DockPanel.Dock="Left" />
+            <TextBlock DockPanel.Dock="Left" Text="Year" />
+            <TextBox x:Name="TxtYear"
+                     Width="55"
+                     VerticalAlignment="Center"
+                     DockPanel.Dock="Left" />
+            <TextBlock DockPanel.Dock="Left" Text="Quota" />
+            <TextBox x:Name="TxtQuota"
+                     Width="55"
+                     VerticalAlignment="Center"
+                     DockPanel.Dock="Left" />
+            <TextBlock DockPanel.Dock="Left" Text="Specialty" />
+            <ComboBox Name="CboSpecialties"
+                      Width="150"
+                      DisplayMemberPath="Description"
+                      DockPanel.Dock="Left"
+                      SelectionChanged="CboSpecialties_SelectionChanged" />
+            <TextBlock DockPanel.Dock="Left" Text="Plan" />
+            <ComboBox Name="CboPlans"
+                      Width="150"
+                      DisplayMemberPath="Description"
+                      DockPanel.Dock="Left"
+                      SelectionChanged="CboPlans_SelectionChanged" />
+        </DockPanel>
+        <DockPanel Margin="0,10,0,0"
+                   HorizontalAlignment="Center"
+                   DockPanel.Dock="Top"
+                   LastChildFill="False">
+            <TextBlock DockPanel.Dock="Left" Text="Subject" />
+            <ComboBox Name="CboSubjects"
+                      Width="150"
+                      DisplayMemberPath="Description"
+                      DockPanel.Dock="Left"
+                      SelectionChanged="CboSubjects_SelectionChanged" />
+            <TextBlock DockPanel.Dock="Left" Text="Commision" />
+            <ComboBox Name="CboCommissions"
+                      Width="150"
+                      DisplayMemberPath="Description"
+                      DockPanel.Dock="Left" />
+        </DockPanel>
+
+        <StackPanel Margin="10"
+                    HorizontalAlignment="Center"
+                    DockPanel.Dock="Top"
+                    Orientation="Horizontal">
+            <Button Click="Create_Click" Content="Create" />
+            <Button Click="Search_Click" Content="Search" />
+            <Button Click="Modify_Click" Content="Modify" />
+            <Button Click="Confirmation_Click" Content="Delete" />
+        </StackPanel>
+        <ListView x:Name="AllCoursesList">
+            <ListView.View>
+                <GridView x:Name="AllCoursesGridView"
+                          AllowsColumnReorder="true"
+                          ColumnHeaderToolTip="Courses Information" />
+            </ListView.View>
+        </ListView>
+    </DockPanel>
+</Page>

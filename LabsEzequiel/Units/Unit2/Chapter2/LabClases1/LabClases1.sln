@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabClases1", "LabClases1\LabClases1.csproj", "{DD8C9742-B913-4930-B9C4-D0C4D076B9E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases", "Clases\Clases.csproj", "{7BDB1025-C9B0-4E83-BBDB-70A055785760}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://utn2017netg38.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LabClases1\\LabClases1.csproj
+		SccProjectName1 = LabClases1
+		SccLocalPath1 = LabClases1
+		SccProjectUniqueName2 = Clases\\Clases.csproj
+		SccProjectName2 = Clases
+		SccLocalPath2 = Clases
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD8C9742-B913-4930-B9C4-D0C4D076B9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8C9742-B913-4930-B9C4-D0C4D076B9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8C9742-B913-4930-B9C4-D0C4D076B9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8C9742-B913-4930-B9C4-D0C4D076B9E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BDB1025-C9B0-4E83-BBDB-70A055785760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BDB1025-C9B0-4E83-BBDB-70A055785760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BDB1025-C9B0-4E83-BBDB-70A055785760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BDB1025-C9B0-4E83-BBDB-70A055785760}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

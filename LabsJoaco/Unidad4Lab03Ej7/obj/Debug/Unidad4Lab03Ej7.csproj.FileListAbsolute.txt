@@ -1,0 +1,11 @@
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03Ej7\bin\Debug\Unidad4Lab03Ej7.exe.config
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03Ej7\bin\Debug\Unidad4Lab03Ej7.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03Ej7\bin\Debug\Unidad4Lab03Ej7.pdb
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03Ej7\bin\Debug\MySql.Data.dll
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03Ej7\obj\Debug\Unidad4Lab03Ej7.csprojResolveAssemblyReference.cache
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03Ej7\obj\Debug\Unidad4Lab03Ej7.Form1.resources
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03Ej7\obj\Debug\Unidad4Lab03Ej7.Properties.Resources.resources
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03Ej7\obj\Debug\Unidad4Lab03Ej7.csproj.GenerateResource.Cache
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03Ej7\obj\Debug\Unidad4Lab03Ej7.csproj.CoreCompileInputs.cache
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03Ej7\obj\Debug\Unidad4Lab03Ej7.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad4Lab03Ej7\obj\Debug\Unidad4Lab03Ej7.pdb

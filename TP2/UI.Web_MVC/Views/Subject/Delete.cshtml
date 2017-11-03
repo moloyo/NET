@@ -1,0 +1,56 @@
+﻿@model Bussiness.Entities.Subject
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Subject</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WeeklyHs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WeeklyHs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalHs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalHs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Planid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Planid)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

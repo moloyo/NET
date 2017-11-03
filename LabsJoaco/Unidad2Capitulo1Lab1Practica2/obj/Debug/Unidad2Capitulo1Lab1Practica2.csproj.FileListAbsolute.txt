@@ -1,0 +1,6 @@
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo1Lab1Practica2\bin\Debug\LabSintaxis3.exe.config
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo1Lab1Practica2\bin\Debug\LabSintaxis3.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo1Lab1Practica2\bin\Debug\LabSintaxis3.pdb
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo1Lab1Practica2\obj\Debug\Unidad2Capitulo1Lab1Practica2.csprojResolveAssemblyReference.cache
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo1Lab1Practica2\obj\Debug\LabSintaxis3.exe
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo1Lab1Practica2\obj\Debug\LabSintaxis3.pdb

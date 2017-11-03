@@ -1,0 +1,50 @@
+﻿@model Bussiness.Entities.Subject
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Subject</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WeeklyHs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WeeklyHs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalHs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalHs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Planid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Planid)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

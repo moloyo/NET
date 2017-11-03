@@ -1,0 +1,99 @@
+﻿<Page x:Class="UI.WPF.CrudPerson"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:UI.WPF"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Title="CreatePerson"
+      d:DesignHeight="300"
+      d:DesignWidth="300"
+      mc:Ignorable="d">
+
+    <StackPanel Width="600">
+        <DockPanel>
+            <TextBlock Width="170"
+                       DockPanel.Dock="Left"
+                       Text="File Number" />
+            <TextBox x:Name="TxtFileNumber"
+                     VerticalAlignment="Center"
+                     TextWrapping="Wrap" />
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="170"
+                       DockPanel.Dock="Left"
+                       Text="Name" />
+            <TextBox x:Name="TxtName"
+                     VerticalAlignment="Center"
+                     TextWrapping="Wrap" />
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="170"
+                       DockPanel.Dock="Left"
+                       Text="Last Name" />
+            <TextBox x:Name="TxtLastName"
+                     VerticalAlignment="Center"
+                     TextWrapping="Wrap" />
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="170"
+                       DockPanel.Dock="Left"
+                       Text="Address" />
+            <TextBox x:Name="TxtAddress" VerticalAlignment="Center" />
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="170"
+                       DockPanel.Dock="Left"
+                       Text="Email" />
+            <TextBox x:Name="TxtEmail"
+                     VerticalAlignment="Center"
+                     TextWrapping="Wrap" />
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="170"
+                       DockPanel.Dock="Left"
+                       Text="Phone Number" />
+            <TextBox x:Name="TxtPhoneNumber"
+                     VerticalAlignment="Center"
+                     TextWrapping="Wrap" />
+        </DockPanel>
+        <DockPanel>
+            <TextBlock Width="170"
+                       DockPanel.Dock="Left"
+                       Text="Birth Date" />
+            <DatePicker x:Name="DpBirthDate"
+                        Height="45"
+                        Margin="5"
+                        VerticalAlignment="Center"
+                        FontSize="22" />
+        </DockPanel>
+        <StackPanel x:Name="StudentOnly" Visibility="Collapsed">
+            <DockPanel>
+                <TextBlock Width="170"
+                           DockPanel.Dock="Left"
+                           Text="Specialty" />
+                <ComboBox Name="CboSpecialties"
+                          DisplayMemberPath="Description"
+                          DockPanel.Dock="Left"
+                          SelectionChanged="CboSpecialties_SelectionChanged" />
+            </DockPanel>
+            <DockPanel>
+                <TextBlock Width="170"
+                           DockPanel.Dock="Left"
+                           Text="Plan" />
+                <ComboBox Name="CboPlans"
+                          DisplayMemberPath="Description"
+                          DockPanel.Dock="Left"
+                          FontSize="22" />
+            </DockPanel>
+        </StackPanel>
+        <StackPanel Margin="10"
+                    HorizontalAlignment="Center"
+                    DockPanel.Dock="Top"
+                    Orientation="Horizontal">
+            <Button Click="Create_Click" Content="Create" />
+            <Button Click="Search_Click" Content="Search" />
+            <Button Click="Modify_Click" Content="Modify" />
+            <Button Click="Confirmation_Click" Content="Delete" />
+        </StackPanel>
+    </StackPanel>
+</Page>

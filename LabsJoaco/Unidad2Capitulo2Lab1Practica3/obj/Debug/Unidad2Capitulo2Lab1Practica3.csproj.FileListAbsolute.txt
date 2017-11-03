@@ -1,0 +1,4 @@
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo2Lab1Practica3\bin\Debug\Geometria.dll
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo2Lab1Practica3\bin\Debug\Geometria.pdb
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo2Lab1Practica3\obj\Debug\Geometria.dll
+E:\Joaquin\Documents\Workspaces\Labs\Unidad2Capitulo2Lab1Practica3\obj\Debug\Geometria.pdb

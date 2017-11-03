@@ -1,0 +1,147 @@
+﻿<Window x:Class="UI.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:UI.WPF"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="La Academia"
+        Width="1544.119"
+        Height="600"
+        MinWidth="1268"
+        mc:Ignorable="d">
+    <DockPanel Margin="0,0,2,0">
+        <Menu DockPanel.Dock="Top">
+
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <DockPanel HorizontalAlignment="Stretch" LastChildFill="False" />
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+
+            <MenuItem x:Name="UserMenu"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_User">
+                <MenuItem Click="CreateUserMenu_Click" Header="_Create" />
+                <MenuItem Click="DeleteUserMenu_Click" Header="_Delete" />
+                <MenuItem Click="ModifyUserMenu_Click" Header="_Modify" />
+                <MenuItem Click="ReadUserMenu_Click" Header="_Read" />
+                <Separator />
+                <MenuItem Click="ListAllUserMenu_Click" Header="_List All" />
+                <Separator />
+                <MenuItem Header="_Complete CRUD" />
+            </MenuItem>
+
+            <MenuItem x:Name="TeachersMenu"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_Teachers">
+                <MenuItem Click="CreateTeacherMenu_Click" Header="_Create" />
+                <Separator />
+                <MenuItem Click="ListAllTeacherItem_Click" Header="_List All" />
+            </MenuItem>
+
+            <MenuItem x:Name="StudentsMenu"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_Students">
+                <MenuItem Click="CreateStudentMenu_Click" Header="_Create" />
+                <Separator />
+                <MenuItem Click="ListAllStudentItem_Click" Header="_List All" />
+            </MenuItem>
+
+            <MenuItem x:Name="InscriptionMenu"
+                      Click="InscriptionMenu_Click"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_Inscription" />
+
+            <MenuItem x:Name="PlanMenu"
+                      Click="PlanMenu_Click"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_Plan" />
+
+            <MenuItem x:Name="SpecialtyMenu"
+                      Click="SpecialtyMenu_Click"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_Specialty" />
+
+            <MenuItem x:Name="SubjectMenu"
+                      Click="SubjectMenu_Click"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_Subject" />
+
+            <MenuItem x:Name="CommissionMenu"
+                      Click="CommissionMenu_Click"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_Commission" />
+
+            <MenuItem x:Name="CourseMenu"
+                      Click="CourseMenu_Click"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_Course" />
+
+            <MenuItem x:Name="TeacherCourseMenu"
+                      Click="TeacherCourseMenu_Click"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_Assignment"
+                      IsEnabled="False" />
+
+            <MenuItem x:Name="QualificationsMenu"
+                      Click="QualificationsMenu_Click"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_Qualifications"
+                      IsEnabled="True" />
+
+            <MenuItem x:Name="ReportsMenu"
+                      Click="ReportsMenu_Click"
+                      DockPanel.Dock="Left"
+                      FlowDirection="RightToLeft"
+                      Header="_Reports"
+                      IsEnabled="True"
+                      RenderTransformOrigin="0.5,0.5">
+                <MenuItem.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform AngleX="1.745" />
+                        <RotateTransform />
+                        <TranslateTransform X="0.716" />
+                    </TransformGroup>
+                </MenuItem.RenderTransform>
+                <MenuItem Click="AttendingList_Click" Header="_Attending List" />
+                <MenuItem Click="StudentAverage_Click" Header="_Student Average" />
+                <MenuItem Click="BestStudents_Click" Header="_Best Student" />
+            </MenuItem>
+
+            <MenuItem x:Name="LogIn"
+                      Click="_logIn_Click"
+                      DockPanel.Dock="Right"
+                      Header="Log _In"
+                      Visibility="Visible" />
+
+            <MenuItem x:Name="LogOut"
+                      Click="_logOut_Click"
+                      DockPanel.Dock="Right"
+                      Header="Log _Out"
+                      Visibility="Collapsed" />
+
+            <MenuItem x:Name="TxtUsername"
+                      DockPanel.Dock="Right"
+                      Visibility="Collapsed" />
+        </Menu>
+        <Frame x:Name="MainFrame"
+               Grid.Row="1"
+               Grid.Column="1"
+               Margin="20"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Center"
+               NavigationUIVisibility="Hidden" />
+    </DockPanel>
+</Window>
